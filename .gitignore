@@ -1,0 +1,14 @@
+ASL110_Display_Demo_20DEC2019.gxp
+build/msvc_2010/ASL110_Display_demo/ASL110_Display_demo.sln
+build/msvc_2010/ASL110_Display_demo/ASL110_Display_demo.sdf
+build/msvc_2010/ASL110_Display_demo/ASL110_Display_demo.suo
+build/mscv_2010/ASL110_Display_demo/Debug/*.ilk
+build/mscv_2010/ASL110_Display_demo/Debug/*.pdb
+build/msvc_2010/ASL110_Display_demo/ASL110_Display_demo/Release/
+build/msvc_2010/ASL110_Display_demo/ASL110_Display_demo.opensdf
+build/msvc_2010/ASL110_Display_demo/Release/ASL110_Display_demo.dat
+build/msvc_2010/ASL110_Display_demo/Release/ASL110_Display_demo.pdb
+
+build/msvc_2010/ASL110_Display_demo/ASL110_Display_demo/Debug/
+build/msvc_2010/ASL110_Display_demo/Debug/
+build/msvc_2010/ASL110_Display_demo/ipch/

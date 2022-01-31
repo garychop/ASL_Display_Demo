@@ -1,0 +1,6 @@
+*.db
+*.sdf
+*.sln
+*.suo
+/ipch/*
+

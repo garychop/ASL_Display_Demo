@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8EA5F583-AA72-4014-A185-4A7C17D265E3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ASL110_Display_demo</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Express_Logic\GUIX_Studio_5.4\win32_runtime;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\..\..\..\win32_runtime;$(SolutionDir)/tx/Debug;$(SolutionDir)/gx/Debug;c:/Express_Logic/GUIX_Studio_5.4/win32_runtime</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;tx.lib;gx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\..\..\..\win32_runtime;$(SolutionDir)\;$(SolutionDir)\tx;$(SolutionDir)\gx;c:/express_Logic/GUIX_Studio_5.4/win32_runtime</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\..\..\..\win32_runtime;$(SolutionDir)\tx\Debug;$(SolutionDir)\gx\Debug;c:/Express_Logic/GUIX_Studio_5.4/win32_runtime</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)tx.lib;gx.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\ASL110 Display_Simulator_Main.c" />
+    <ClCompile Include="..\..\..\..\asl110_display_demo_resources.c" />
+    <ClCompile Include="..\..\..\..\asl110_display_demo_specifications.c" />
+    <ClCompile Include="..\..\..\..\AttendantScreen.c" />
+    <ClCompile Include="..\..\..\..\AttendantSettingsScreen.c" />
+    <ClCompile Include="..\..\..\..\custom_checkbox.c" />
+    <ClCompile Include="..\..\..\..\DiagnosticScreen.c" />
+    <ClCompile Include="..\..\..\..\FeatureSettingScreen.c" />
+    <ClCompile Include="..\..\..\..\HHP_StartScreen.c" />
+    <ClCompile Include="..\..\..\..\MinimumDriveScreen.c" />
+    <ClCompile Include="..\..\..\..\MoreSelectionScreen.c" />
+    <ClCompile Include="..\..\..\..\OutOfNeutralScreen.c" />
+    <ClCompile Include="..\..\..\..\PadCalibrationScreen.c" />
+    <ClCompile Include="..\..\..\..\PadDirectionScreen.c" />
+    <ClCompile Include="..\..\..\..\PadOptionsSettingScreen.c" />
+    <ClCompile Include="..\..\..\..\PerformanceSelectionScreen.c" />
+    <ClCompile Include="..\..\..\..\ResetScreen.c" />
+    <ClCompile Include="..\..\..\..\SetPadTypeScreen.c" />
+    <ClCompile Include="..\..\..\..\StartupScreen.c" />
+    <ClCompile Include="..\..\..\..\UserMainScreen.c" />
+    <ClCompile Include="..\..\..\..\UserSelectionScreen.c" />
+    <ClCompile Include="..\..\..\..\UserSettingsScreen.c" />
+    <ClCompile Include="..\..\..\..\VeerAdjustScreen.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\asl110_display_demo_resources.h" />
+    <ClInclude Include="..\..\..\..\asl110_display_demo_specifications.h" />
+    <ClInclude Include="..\..\..\..\ASL110_Display_Simulator_Main.h" />
+    <ClInclude Include="..\..\..\..\ASL165_System.h" />
+    <ClInclude Include="..\..\..\..\custom_checkbox.h" />
+    <ClInclude Include="..\..\..\..\PadInfo.h" />
+    <ClInclude Include="..\..\..\..\UserMainScreen.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
